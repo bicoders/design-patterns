@@ -28,7 +28,7 @@ class Car {
 
 The `CarPrototype` class is responsible for cloning `Car` objects efficiently.
 
-````typescript
+```typescript
 class CarPrototype {
   public prototype: Car;
 
