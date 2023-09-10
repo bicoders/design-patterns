@@ -2,18 +2,33 @@
   "name": "design-patterns",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup --format esm,cjs --dts --minify",
+    "dev": "tsup --watch --format esm,cjs --dts --minify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start-prototype": "nodemon creational/prototype/usecases/imdb/dist/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bicoders/design-patterns.git"
   },
-  "author": "",
+  "author": "bicoders",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bicoders/design-patterns/issues"
   },
-  "homepage": "https://github.com/bicoders/design-patterns#readme"
+  "homepage": "https://github.com/bicoders/design-patterns#readme",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=18.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
 }
