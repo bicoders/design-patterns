@@ -7,7 +7,7 @@
     "dev": "tsup --watch --format esm,cjs --dts --minify",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "start-prototype": "nodemon creational/prototype/usecases/imdb/dist/index.js"
+    "start-prototype-imdb": "nodemon creational/prototype/usecases/imdb/dist/index.js"
   },
   "repository": {
     "type": "git",
